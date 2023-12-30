@@ -41,3 +41,25 @@ let someNumber=33
 let stringInSomeNumber= String(someNumber)
 console.log(typeof stringInSomeNumber)//string
 console.log(stringInSomeNumber)//33
+
+// ******************************Operations************************************
+
+let value2=3;
+let negativeValue=-value2;
+console.log(negativeValue);
+console.log("1"+2);//12
+console.log(2+"1");//21
+console.log("1"+2+2);//122
+console.log(1+2+"2");//32
+console.log(2+3*5%3);//2
+console.log(true);//true
+console.log(+true);//1
+console.log(+"");//0
+let x = 3;
+const y = x++;
+// x is 4; y is 3
+console.log(`x:${x}, y:${y}`)
+let x2 = 3n;
+const y2 = x2++;
+// x2 is 4; y2 is 3
+console.log(`x2:${x2}, y2:${y2}`)
