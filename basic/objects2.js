@@ -42,3 +42,23 @@ const obj4 = {...obj1, ...obj2}
 
 console.log(tinderUser)
 console.log(Object.keys(tinderUser))//[ 'id', 'name', 'isLoggedIn' ]
+const course={
+    coursename:" js is hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+// course.courseInstructor
+//Object destructuring and Api
+// const {courseInstructor}=course
+// console.lastname(courseInstructor)//hitesh
+
+// const {courseInstructor: instructor} = course
+// console.log(instructor)//hitesh
+
+//Json
+
+// {
+//     name:"hitesh",
+//     courseName: "js in hindi",
+//     price:"free"
+// }
