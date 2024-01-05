@@ -1,6 +1,22 @@
 html {
     margin: 0;
   }
+  nav{
+    margin: 80px auto 80px;
+    text-align: center;
+  }
+  nav a{
+    margin-left: 10px;
+    padding: 20px;
+    background-color: rgb(238, 167, 86);
+    color:black;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: solid black 2px;
+    border-radius: 10px;
+    display: inline;
+    
+  }
   
   span {
     display: block;
@@ -16,6 +32,7 @@ html {
     height: 100px;
     border: solid black 2px;
     display: inline-block;
+    border-radius: 10px;
   }
   
   #grey {
