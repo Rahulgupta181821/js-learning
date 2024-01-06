@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" > </li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    //JS is sequentialy run language.
+    //but events work on any activity link mouse hover,keyboard press
+    // document.getElementById('owl').onclick = function(){
+    //     alert('owl photos');
+    // }
+    // we don't use onclick because it gives less feature. Hence we use events.
+
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log(e)
+    // }, false)
+    // attachEvent()=> we use in old time
+    //jQuery - on 
+    
+
+
+    //learn 
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+
+    //Bubbling: bottom to top
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul")
+    // }, false)
+  
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked")
+    // }, false)
+    /* 
+    click on any image except owl: clicked inside the ul 2 one.html:83:17
+    click on owl=>
+    1.owl clicked one.html:87:17
+    2.clicked inside the ul
+    =>because of eventpropgation(bubbling it means it start down to top)
+    */
+
+   //captureing mode:top to bottom
+//    document.getElementById('images').addEventListener('click', function(e){
+//         console.log("clicked inside the ul")
+//     }, true)
+  
+//     document.getElementById('owl').addEventListener('click', function(e){
+//         console.log("owl clicked")
+//     }, true)
+  /* 
+  clicked inside the ul 2 one.html:101:17
+  owl clicked
+  => it comes top to bottom.
+  if we use eventListener then please check your usecase.(top to bottom or bottom to top)
+  */
+ 
+
+ // use stopProgagation
+//  document.getElementById('images').addEventListener('click', function(e){
+//         console.log("clicked inside the ul")
+//     }, false)
+  
+//     document.getElementById('owl').addEventListener('click', function(e){
+//         console.log("owl clicked")
+//         e.stopPropagation()
+//     }, false)
+    // owl clicked
+
+
+
+
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //     console.log("google clicked")
+        
+    // })
+
+
+
+    
+</script>
+</html>
